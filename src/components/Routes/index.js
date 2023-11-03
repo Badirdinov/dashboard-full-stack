@@ -3,13 +3,16 @@ import {Route, Routes} from "react-router-dom";
 
 
 import Home from "../Home"
+import {ROUTES} from "../../utils/routes";
+import SingleProduct from "../Products/SingleProduct";
 
 const AppRoutes = () => (
-	<div>
+	<>
 	  <Routes>
 		<Route index element={<Home/>}/>
+		<Route path={ROUTES.PRODUCT} element={<SingleProduct/>}/>
 	  </Routes>
-	</div>
+	</>
 );
 
 export default AppRoutes;
